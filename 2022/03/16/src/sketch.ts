@@ -44,7 +44,7 @@ export const sketch = (p: p5) => {
    * ================================== */
 
   // Set recording (and sketch) framerate
-  const framerate:number = 30
+  const framerate:number = 120
 
   // Set MediaRecorder options
   const settings:Object = {
@@ -72,19 +72,35 @@ export const sketch = (p: p5) => {
     // Define your initial environment props & other stuff here
     p.createCanvas(width, height) // Define canvas element
     p.frameRate(framerate) // Use recording framerate
+    p.angleMode(p.DEGREES)
     context = (p as any).drawingContext // Leave to disable eslint warning by setting "p as any"
+    p.background(255,10)
   }
 
   /* ===========================================
    * p5.js - Drawing
    * =========================================== */
 
-  let t:number = 0 // loop counter
+  let t:number = 200 // loop counter
+  let x:number = 0
+  let y:number = 0
 
   p.draw = () => {
     // Define render logic for your sketch here
-
-    t+=1 // counter
+    p.fill(0)
+    p.background(255,10)
+    p.noStroke()
+    p.ellipse(x,y,25)
+    t+=(-Math.random()*Math.cos(t)+8*Math.cos(t)) // counter
+    p.scale(Math.cos(t))
+    x+=t
+    if (x-width > 0) {
+      y+=(88*Math.sin(t))
+      x=0
+    }
+    if (y-height > 0) {
+      y=0
+    }
   }
 
   p.keyPressed = () => {

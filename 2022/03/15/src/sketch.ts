@@ -44,14 +44,14 @@ export const sketch = (p: p5) => {
    * ================================== */
 
   // Set recording (and sketch) framerate
-  const framerate:number = 120
+  const framerate:number = 30
 
   // Set MediaRecorder options
   const settings:Object = {
     fps: <number> framerate,
     filename: <string> 'sketch.mp4',
     codec: <string> 'video/webm;codecs=h264,opus', // use h.264 codec
-    videoBitsPerSecond: <number> 5000000, // sets 5Mb bitrate
+    videoBitsPerSecond: <number> 40000000, // sets 5Mb bitrate
   }
 
   let recorder:Recorder

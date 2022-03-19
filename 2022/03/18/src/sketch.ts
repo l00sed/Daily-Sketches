@@ -70,7 +70,7 @@ export const sketch = (p: p5) => {
 
   p.setup = () => {
     // Define your initial environment props & other stuff here
-    p.createCanvas(width, height) // Define canvas element
+    p.createCanvas(width, height, p.WEBGL) // Define canvas element
     p.frameRate(framerate) // Use recording framerate
     context = (p as any).drawingContext // Leave to disable eslint warning by setting "p as any"
   }
@@ -80,11 +80,48 @@ export const sketch = (p: p5) => {
    * =========================================== */
 
   let t:number = 0 // loop counter
+  let x:number = width/2
+  let y:number = height/2
+  let toggle:boolean = true
 
   p.draw = () => {
-    // Define render logic for your sketch here
+    p.ambientLight(40, 40, 40)
+    p.pointLight(255, 255, 255, t%width, t%height, 250)
+    // https://editor.p5js.org/p5/sketches/3D:_sine_cosine_in_3D
+    p.background(250)
+    p.rotateY(p.frameCount * 0.01)
+    p.noStroke()
 
-    t+=1 // counter
+    for (let j = 0; j < 5; j++) {
+      p.push()
+      for (let i = 0; i < 80; i++) {
+        p.translate(
+          Math.sin(p.frameCount * 0.001 + j) * 100,
+          Math.sin(p.frameCount * 0.001 + j) * 100,
+          i * 0.1
+        )
+        p.rotateZ(p.frameCount * 0.002)
+        p.push()
+        p.specularMaterial(250)
+        p.shininess(20)
+        p.sphere(t, 24, 24)
+        p.pop()
+      }
+      p.pop()
+    }
+
+    if (t > 200) {
+      toggle = false
+    }
+    if (t < 5) {
+      toggle = true
+    }
+    if (toggle == false) {
+      t-=1
+    } else {
+      t+=1 // counter
+    }
+
   }
 
   p.keyPressed = () => {

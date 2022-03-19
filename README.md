@@ -18,4 +18,7 @@ Trying to get into the habit of writing some daily p5 sketches to get better at 
 [03/12](./2022/03/12/sketch.gif)
 [03/13](./2022/03/13/sketch.gif)
 [03/14](./2022/03/14/sketch.gif)
+[03/15](./2022/03/15/sketch.gif)
+[03/16](./2022/03/16/sketch.gif)
+[03/18](./2022/03/18/sketch.gif)
 

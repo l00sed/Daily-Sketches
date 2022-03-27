@@ -96,12 +96,17 @@ export const sketch = (p: p5) => {
     p.rotate(Math.sin(t), p.createVector(width/2, height/2, 0))
     p.background(0,5)
     p.stroke(200+t%55,60+t%155,200+t%55,250)
-    p.strokeWeight(3)
+    p.strokeWeight(35)
     p.noFill()
     p.beginShape()
       p.vertex(x0,y0)
       p.bezierVertex(x1, y1, x2, y2, x3, y3)
     p.endShape()
+
+    p.fill(255,255)
+    p.stroke(255,255)
+    p.ellipse(x0,y0,45)
+    p.ellipse(x3,y3,45)
 
     x0+=(-range*Math.random()+range*Math.random())
     x1+=(-range*Math.random()+range*Math.random())
@@ -111,11 +116,6 @@ export const sketch = (p: p5) => {
     y1+=(-range*Math.random()+range*Math.random())
     y2+=(-range*Math.random()+range*Math.random())
     y3+=(-range*Math.random()+range*Math.random())
-
-    p.fill(255,255)
-    p.stroke(255,255)
-    p.ellipse(x0,y0,25)
-    p.ellipse(x3,y3,25)
 
     t+=0.05 // counter
   }

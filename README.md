@@ -7,5 +7,6 @@ Trying to get into the habit of writing some daily p5 sketches to get better at 
 <img src="./2022/03/08/sketch.gif" width="30%" /><img src="./2022/03/09/sketch.gif" width="30%" /><img src="./2022/03/10/sketch.gif" width="30%" />
 <img src="./2022/03/11/sketch.gif" width="30%" /><img src="./2022/03/12/sketch.gif" width="30%" /><img src="./2022/03/13/sketch.gif" width="30%" />
 <img src="./2022/03/14/sketch.gif" width="30%" /><img src="./2022/03/15/sketch.gif" width="30%" /><img src="./2022/03/16/sketch.gif" width="30%" />
-<img src="./2022/03/18/sketch.gif" width="30%" />
+<img src="./2022/03/18/sketch.gif" width="30%" /><img src="./2022/03/20/sketch.gif" width="30%" /><img src="./2022/03/22/sketch.gif" width="30%" />
+<img src="./2022/03/27/sketch.gif" width="30%" />
 

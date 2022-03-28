@@ -83,7 +83,7 @@ export const sketch = (p: p5) => {
 
   p.draw = () => {
     // Define render logic for your sketch here
-    p.background(0,1)
+    p.background(0,10)
     p.stroke(255)
     p.fill(255)
     p.ellipse(t%width*Math.random(),t%height*Math.random(),5)

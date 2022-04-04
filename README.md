@@ -17,5 +17,5 @@ I've also been using Grasshopper 3D to produce some interesting scripts for gene
 <img src="./2022/03/14/sketch.gif" width="30%" /><img src="./2022/03/15/sketch.gif" width="30%" /><img src="./2022/03/16/sketch.gif" width="30%" />
 <img src="./2022/03/18/sketch.gif" width="30%" /><img src="./2022/03/20/sketch.gif" width="30%" /><img src="./2022/03/22/sketch.gif" width="30%" />
 <img src="./2022/03/27/sketch.gif" width="30%" /><img src="./2022/03/29/sketch.gif" width="30%" /><img src="./2022/03/31/sketch.gif" width="30%" />
-<img src="./2022/04/02/sketch.gif" width="30%" />
+<img src="./2022/04/02/sketch.gif" width="30%" /><img src="./2022/04/03/sketch.gif" width="30%" />
 
